@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RegistroController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,11 +15,7 @@ use App\Http\Controllers\RegistroController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/registro', function () {
     return view('registro');
 });
-Route::post('/registrar', [RegistroController::class, 'registrar'])->name('registrar');
+Route::post('/user', [UserController::class, 'store'])->name('store');
 

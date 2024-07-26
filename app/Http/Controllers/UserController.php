@@ -8,7 +8,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Hash;
 use Exception;
 
-class RegistroController extends Controller
+class UserController extends Controller
 {
     /**
      * Registrar un nuevo usuario.
@@ -16,7 +16,7 @@ class RegistroController extends Controller
      * @param  UserRequest  $request
      * @return JsonResponse
      */
-    public function registrar(UserRequest $request): JsonResponse
+    public function store(UserRequest $request): JsonResponse
     {
         try {
             $user = User::create([

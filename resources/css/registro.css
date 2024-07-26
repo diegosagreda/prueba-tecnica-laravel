@@ -28,7 +28,7 @@ p {
 .container {
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px 20px 5px;
+    padding: 20px 20px 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -37,6 +37,7 @@ h2 {
     text-align: left;
     font-size: 28px;
     font-weight: 500;
+    margin-top: 0;
 }
 
 /* Espaciado para cada div dentro del formulario */
@@ -154,6 +155,10 @@ button[type="submit"]:hover {
 .text-error {
     margin-top: 5px;
     color: #CC0C39;
+}
+
+#error_password{
+    margin: 0;
 }
 
 /* Estilo para el mensaje de éxito */

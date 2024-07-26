@@ -43,7 +43,7 @@ Esta aplicación web permite a los usuarios crear una cuenta en una plataforma q
  cp .env.example .env
 ```
 
-2). Configura el archivo .env con tus credenciales de base de datos y otras variables de entorno.
+2). Configura el archivo .env con tus credenciales de base de datos
 
 3). Instala las dependencias de PHP:
 
@@ -99,7 +99,7 @@ La aplicación estará disponible en http://localhost:8000.
 
 ### Backend:
 
-* El controlador para el registro de usuarios se encuentra en app/Http/Controllers/RegistroController.php
+* El controlador para el registro de usuarios se encuentra en app/Http/Controllers/UserController.php
 * Las rutas están definidas en routes/web.php
 
 

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function submitForm(formData) {
-        fetch('/registrar', {
+        fetch('/user', {
             method: 'POST',
             body: formData,
             headers: {
@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const mensajeDiv = document.getElementById('mensaje');
         mensajeDiv.classList.add('success');
         mensajeDiv.innerHTML = '<p>Usuario Creado con éxito</p>';
+        form.reset();
         setTimeout(() => {
             mensajeDiv.innerHTML = '';
             mensajeDiv.classList.remove('success');

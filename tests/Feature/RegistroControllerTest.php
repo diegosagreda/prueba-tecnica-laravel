@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
-class RegistroControllerTest extends TestCase
+class UserControllerTest extends TestCase
 {
     use RefreshDatabase;
 
