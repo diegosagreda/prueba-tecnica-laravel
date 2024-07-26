@@ -67,10 +67,16 @@ document.addEventListener('DOMContentLoaded', function() {
     function mostrarMensajesError(errors) {
         if (errors) {
             Object.keys(errors).forEach(field => {
-                const inputField = document.querySelector(`[name="${field}"]`);
+                let inputField = document.querySelector(`[name="${field}"]`);
+                if(errors[field][0] === 'El campo confirmación de password no coincide.'){
+                    inputField = document.querySelector('[name="password_confirmation"]');
+                }
                 if (inputField) {
                     inputField.classList.add('input-error');
-                    const errorParagraph = document.getElementById(`error_${field}`);
+                    let errorParagraph = document.getElementById(`error_${field}`);
+                    if(errors[field][0] === 'El campo confirmación de password no coincide.'){
+                        errorParagraph = document.getElementById('error_password_confirmation');
+                    }
                     if (errorParagraph) {
                         errorParagraph.textContent = `* ${errors[field][0]}`;
                     }

@@ -7,7 +7,6 @@ body {
     font-size: 14px;
     line-height: 1.5;
 }
-
 a {
     text-decoration: none;
     color: #1972d7;
@@ -16,18 +15,22 @@ a {
 p {
     font-weight: 400;
 }
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .amazon-logo {
-    display: block;
-    margin: 0 auto;
-    width: 150px;
+
+    width: 200px;
     height: auto;
 }
 
 /* Estilos para el contenedor del formulario */
 .container {
     max-width: 400px;
-    margin: 0 auto;
     padding: 20px 20px 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -38,6 +41,7 @@ h2 {
     font-size: 28px;
     font-weight: 500;
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
 /* Espaciado para cada div dentro del formulario */
@@ -164,7 +168,10 @@ button[type="submit"]:hover {
 /* Estilo para el mensaje de éxito */
 .success {
     padding: 5px;
-    background-color: rgb(119, 159, 119);
+    background-color: #1D8102;
     color: white;
+    margin-bottom: 10px;
+}
+.success p{
     font-weight: bold;
 }
