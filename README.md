@@ -31,7 +31,7 @@ Esta aplicación web permite a los usuarios crear una cuenta en una plataforma q
 
 ```bash
   git clone https://github.com/diegosagreda/prueba-tecnica-laravel.git
-  cd project-laravel
+  cd prueba-tecnica-laravel
 
 ```
 
