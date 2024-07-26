@@ -43,7 +43,7 @@ Esta aplicación web permite a los usuarios crear una cuenta en una plataforma q
  cp .env.example .env
 ```
 
-2). Configura el archivo .env con tus credenciales de base de datos
+2). Configura el archivo .env con tus credenciales de base de datos para PostgresSQL o MySQL
 
 3). Instala las dependencias de PHP:
 
