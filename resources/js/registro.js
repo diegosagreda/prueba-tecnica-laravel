@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     inputField.classList.add('input-error');
                     const errorParagraph = document.getElementById(`error_${field}`);
                     if (errorParagraph) {
-                        errorParagraph.textContent = errors[field][0];
+                        errorParagraph.textContent = `* ${errors[field][0]}`;
                     }
                 }
             });
